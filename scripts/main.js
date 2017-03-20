@@ -10,10 +10,10 @@ window.addEventListener('scroll', function () {
 
 // $("#backButton").click(function () {showPreviousView()});
 $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if(scroll > 100){
+    let scroll = $(window).scrollTop();
+    if(scroll > 100) {
         $(".back-to-top-container").fadeIn(500);
-    }else{
+    } else {
         $(".back-to-top-container").fadeOut(500);
     }
 });

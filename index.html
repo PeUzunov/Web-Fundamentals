@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>ThinkUni</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <script src="scripts/jquery-3.0.0.js"></script>
     <script src="scripts/main.js"></script>
 
 </head>
+
 <body>
-<div id="content">
-    <header id="header-menu">
-        <div class="logoHolder"><img src="//www.upwork.com/static/marketing/ui/master/img/upwork-logo.svg" class="logo" alt=""></div>
+    <header class="header-menu">
+        <div class="logoHolder">
+          <img src="images/logo.png" class="logo" alt="">
+        </div>
         <nav class="navigation-menu">
             <span><a href="#photos">Photos</a></span>
             <span><a href="#photos">Photos</a></span>
@@ -21,26 +30,31 @@
         </nav>
     </header>
 
-    <div class="spacer"></div>
-
     <main class="mainContainer">
 
         <section class="container banner">
-            <div class="title-holder">
-                <div class="title">
+            <div class="banner-text-holder">
+                <div class="banner-text-title">
                     <blockquote>
                         <h3>
-                            I can change the world, if they only give me the source code.
+                            I can change the world, if they only give me the source <span>&#60;code&#62;</span>.
                         </h3>
                     </blockquote>
                 </div>
-                <div class="subtitle">
-                    &#45;SoftUni Student
+                <div class="banner-text-subtitle">
+                    <p>
+                        &#45;SoftUni Student
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="table-expenses container">
+            <div class="table-expences-title">
+                <h1>
+                  How much money you will need as a programmer?
+                </h1>
+            </div>
             <div class="table">
                 <table>
                     <thead>
@@ -81,183 +95,144 @@
             </div>
         </section>
 
+        <section class="code-background">
+          <div class="fixed-bg">
+
+          </div>
+        </section>
+
         <section class="chat container">
             <div class="chat-info">
                 <ul class="comment-section">
-
                     <li class="comment user-comment">
-
                         <div class="info">
-                            <a href="#">Anie Silverston</a>
-                            <span>4 hours ago</span>
+                            <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
+                            <span>1 hour ago</span>
                         </div>
-
-                        <a class="avatar" href="#">
-                            <img src="images/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+                        <a target="_blank" class="avatar" href="https://softuni.bg/">
+                            <img  src="images/programmer-chat-pic.png" width="35" alt="Profile Avatar" title="The Programmer" />
                         </a>
-
-                        <p>Suspendisse gravida sem?</p>
-
+                        <p>How do you tell HTML or HTML5?</p>
                     </li>
-
                     <li class="comment author-comment">
 
                         <div class="info">
-                            <a href="#">Jack Smith</a>
-                            <span>3 hours ago</span>
-                        </div>
-
-                        <a class="avatar" href="#">
-                            <img src="images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
-                        </a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sem sit amet molestie portitor.</p>
-
-                    </li>
-
-                    <li class="comment user-comment">
-
-                        <div class="info">
-                            <a href="#">Bradley Jones</a>
+                            <a target="_blank" href="http://merriechristopher.com/">The Dream Girl</a>
                             <span>1 hour ago</span>
                         </div>
-
-                        <a class="avatar" href="#">
-                            <img src="images/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Bradley Jones" />
+                        <a target="_blank" class="avatar" href="http://merriechristopher.com/">
+                            <img src="images/girl-chat-pic.jpg" width="35" alt="Profile Avatar" title="Merrie Christopher" />
                         </a>
-
-                        <p>Suspendisse gravida sem sit amet molestie portitor?</p>
-
+                        <p>Try it out in Internet Explorer. Did it work?</p>
                     </li>
-
+					
+					<li class="comment user-comment">
+                        <div class="info">
+                            <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
+                            <span>1 minute ago</span>
+                        </div>
+                        <a target="_blank" class="avatar" href="https://softuni.bg/">
+                            <img  src="images/programmer-chat-pic.png" width="35" alt="Profile Avatar" title="The Programmer" />
+                        </a>
+                        <p>No?</p>
+                    </li>
                     <li class="comment author-comment">
 
                         <div class="info">
-                            <a href="#">Jack Smith</a>
-                            <span>1 hour ago</span>
+                            <a target="_blank" href="http://merriechristopher.com/">The Dream Girl</a>
+                            <span>1 minute ago</span>
                         </div>
-
-                        <a class="avatar" href="#">
-                            <img src="images/avatar_author.jpg" width="35" alt="Profile Avatar" title="Jack Smith" />
+                        <a target="_blank" class="avatar" href="http://merriechristopher.com/">
+                            <img src="images/girl-chat-pic.jpg" width="35" alt="Profile Avatar" title="Merrie Christopher" />
                         </a>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisee gravida sem sit amet molestie porttitor.</p>
-
+                        <p>It's HTML5</p>
                     </li>
-
-                    <li class="write-new">
-
-                        <form action="#" method="post">
-
-                            <textarea placeholder="Write your comment here" name="comment"></textarea>
-
-                            <div>
-                                <img src="images/avatar_user_2.jpg" width="35" alt="Profile of Bradley Jones" title="Bradley Jones" />
-                                <button type="submit">Submit</button>
-                            </div>
-
-                        </form>
-
-                    </li>
-
+					
+                   
                 </ul>
             </div>
         </section>
+		
+		 <section class="chat container">
+            <div class="chat-info">
+                <ul class="comment-section">
+                    <li class="comment user-comment">
+                        <div class="info">
+                            <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
+                            <span>4 hours ago</span>
+                        </div>
+                        <a target="_blank" class="avatar" href="https://softuni.bg/">
+                            <img  src="images/programmer-chat-pic.png" width="35" alt="Profile Avatar" title="The Programmer" />
+                        </a>
+                        <p>You are the &#123;CSS&#125; to my &#60;HTML&#62; &#9829;</p>
+                    </li>
+					
+                    <li class="comment author-comment">
 
-        <section class="photo-section container">
-            <div class="photo-styles">
-
-                <div class="photos">
-                    <div class="front">
-                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile of                                  Bradley Jones" title="Bradley Jones" />
-                    </div>
-                    <div class="back">
-                        <p>
-                            <a href="#">Some of our most in-demand pros.</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="photos" id="photos">
-                    <div class="front">
-                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile of                                  Bradley Jones" title="Bradley Jones" />
-                    </div>
-                    <div class="back">
-                        <p>
-                            <a href="#">Some of our most in-demand pros.</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="photos">
-                    <div class="front">
-                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile of                                  Bradley Jones" title="Bradley Jones" />
-                    </div>
-                    <div class="back">
-                        <p>
-                            <a href="#">Some of our most in-demand pros.</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="photos">
-                    <div class="front">
-                        <img src="images/avatar_user_2.jpg" width="35" alt="Profile of                                  Bradley Jones" title="Bradley Jones" />
-                    </div>
-                    <div class="back">
-                        <p>
-                            <a href="#">Some of our most in-demand pros.</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="gif container">
-            <div class="gif-section">
-
+                        <div class="info">
+                            <a target="_blank" href="https://www.facebook.com/">Girl</a>
+                            <span>1 minute ago</span>
+                        </div>
+                        <a target="_blank" class="avatar" href="https://www.facebook.com/">
+                            <img src="images/girl-chat-pic.jpg" width="35" alt="Profile Avatar" title="Merrie Christopher" />
+                        </a>
+                        <p>?</p>
+                    </li>
+					
+                    <li class="comment user-comment">
+                        <div class="info">
+                            <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
+                            <span>1 minute ago</span>
+                        </div>
+                        <a target="_blank" class="avatar" href="https://softuni.bg/">
+                            <img  src="images/programmer-chat-pic.png" width="35" alt="Profile Avatar" title="The Programmer" />
+                        </a>
+                        <p>Sorry, I'm a programmer and I have no life</p>
+                    </li>					
+					              
+                </ul>
             </div>
         </section>
 
         <section class="classes container">
             <h1 class="classes-title">
-                What you will learn in LifeUni
+                What you will learn in ThinkUni?
             </h1>
             <div class="all-classes">
                 <div class="single-class">
                     <div class="single-class-container">
                         <div class="side">
-                            <a href="#">Some of our most in-demand pros.</a>
+                            <a href="#">HTML</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-algorithms.jpg" alt="img">
+                            <img src="images/class-html.jpg" alt="img">
                         </div>
                     </div>
                 </div>
                 <div class="single-class">
                     <div class="single-class-container">
                         <div class="side">
-                            <a href="#">Some of our most in-demand pros.</a>
+                            <a href="#">css</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-algorithms.jpg" alt="img">
+                            <img src="images/class-css.png" alt="img">
                         </div>
                     </div>
                 </div>
                 <div class="single-class">
                     <div class="single-class-container">
                         <div class="side">
-                            <a href="#">Some of our most in-demand pros.</a>
+                            <a href="#">how to debug</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-algorithms.jpg" alt="img">
+                            <img src="images/class-debugging.jpg" alt="img">
                         </div>
                     </div>
                 </div>
                 <div class="single-class">
                     <div class="single-class-container">
                         <div class="side">
-                            <a href="#">Some of our most in-demand pros.</a>
+                            <a href="#">algorithms</a>
                         </div>
                         <div class="side back">
                             <img src="images/class-algorithms.jpg" alt="img">
@@ -265,10 +240,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
-        <section class="git-hub container">
+		
+		        <section class="git-hub container">
 
             <div class="git-hub row">
                 <div class="octo-cat">
@@ -288,160 +262,166 @@
 
                 <div class="fork-button-container">
                     <div class="fork-button">
-                        <a href="#">
+                        <a target="_blank" href="https://github.com/PeUzunov/Web-Fundamentals">
                             <span class="line-one">fork lifeuni</span>
                             <span class="line-two">on github</span>
                         </a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="css-properties container">
-            <article class="css-property">
-                <div class="article-img">
-                    <div class="transition-view">
-                        <div class="transition-front">
-                            <img src="images/big-bang.png" />
-                        </div>
-                        <div class="transition-back">
-                            <div class="css-code">
-                                <p class="language-css first-row">
-                                    <span class="token selector">&#35;titanic&ensp;</span>
-                                    <span class="token punctuation">&#123;</span>
-                                </p>
+            <div class="css-properties-title">
+                <h1>
+                  Here are some CSS properties you might want to know about
+                </h1>
+            </div>
+            <div class="css-properties-articles">
+              <article class="css-property">
+                  <div class="article-img">
+                      <div class="transition-view">
+                          <div class="transition-front">
+                              <img src="images/property-floating.png" />
+                          </div>
+                          <div class="transition-back">
+                              <div class="css-code">
+                                  <p class="language-css first-row">
+                                      <span class="token selector">&#35;titanic&ensp;</span>
+                                      <span class="token punctuation">&#123;</span>
+                                  </p>
 
-                                <p class="language-css second-row">
-                                    <span class="token property">float</span>
-                                    <span class="token punctuation">&#58;</span>
-                                    <span class="token value"> none</span>
-                                    <span class="token punctuation">&#59;</span>
-                                </p>
+                                  <p class="language-css second-row">
+                                      <span class="token property">float</span>
+                                      <span class="token punctuation">&#58;</span>
+                                      <span class="token value"> none</span>
+                                      <span class="token punctuation">&#59;</span>
+                                  </p>
 
-                                <p class="language-css third-row">
-                                    <span class="token punctuation">&#125;</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="article-content">
-                    <h2>Floating</h2>
-                    <p>
-                        The float property specifies whether or not a box (an element) should float.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            </article>
+                                  <p class="language-css third-row">
+                                      <span class="token punctuation">&#125;</span>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="article-content">
+                      <h2>floating</h2>
+                      <p>
+                          The float property specifies whether or not a box (an element) should float.
+                      </p>
+                      <a href="#">Learn more</a>
+                  </div>
+              </article>
 
-            <article class="css-property">
-                <div class="article-img">
-                    <div class="transition-view">
-                        <div class="transition-front">
-                            <img src="images/big-bang.png" />
-                        </div>
-                        <div class="transition-back">
-                            <div class="css-code">
-                                <p class="language-css first-row">
-                                    <span class="token selector">&#35;titanic&ensp;</span>
-                                    <span class="token punctuation">&#123;</span>
-                                </p>
+              <article class="css-property">
+                  <div class="article-img">
+                      <div class="transition-view">
+                          <div class="transition-front">
+                              <img src="images/property-display.png" />
+                          </div>
+                          <div class="transition-back">
+                              <div class="css-code">
+                                  <p class="language-css first-row">
+                                      <span class="token selector">&#35;bermuda&#45;triangle&ensp;</span>
+                                      <span class="token punctuation">&#123;</span>
+                                  </p>
 
-                                <p class="language-css second-row">
-                                    <span class="token property">float</span>
-                                    <span class="token punctuation">&#58;</span>
-                                    <span class="token value"> none</span>
-                                    <span class="token punctuation">&#59;</span>
-                                </p>
+                                  <p class="language-css second-row">
+                                      <span class="token property">display</span>
+                                      <span class="token punctuation">&#58;</span>
+                                      <span class="token value"> none</span>
+                                      <span class="token punctuation">&#59;</span>
+                                  </p>
 
-                                <p class="language-css third-row">
-                                    <span class="token punctuation">&#125;</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="article-content">
-                    <h2>Floating</h2>
-                    <p>
-                        The float property specifies whether or not a box (an element) should float.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            </article>
+                                  <p class="language-css third-row">
+                                      <span class="token punctuation">&#125;</span>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="article-content">
+                      <h2>display</h2>
+                      <p>
+                          The display property specifies the type of box used for an HTML element.
+                      </p>
+                      <a href="#">Learn more</a>
+                  </div>
+              </article>
 
-            <article class="css-property">
-                <div class="article-img">
-                    <div class="transition-view">
-                        <div class="transition-front">
-                            <img src="images/big-bang.png" />
-                        </div>
-                        <div class="transition-back">
-                            <div class="css-code">
-                                <p class="language-css first-row">
-                                    <span class="token selector">&#35;titanic&ensp;</span>
-                                    <span class="token punctuation">&#123;</span>
-                                </p>
+              <article class="css-property">
+                  <div class="article-img">
+                      <div class="transition-view">
+                          <div class="transition-front">
+                              <img src="images/property-visibility.png" />
+                          </div>
+                          <div class="transition-back">
+                              <div class="css-code">
+                                  <p class="language-css first-row">
+                                      <span class="token selector">.ninja&ensp;</span>
+                                      <span class="token punctuation">&#123;</span>
+                                  </p>
 
-                                <p class="language-css second-row">
-                                    <span class="token property">float</span>
-                                    <span class="token punctuation">&#58;</span>
-                                    <span class="token value"> none</span>
-                                    <span class="token punctuation">&#59;</span>
-                                </p>
+                                  <p class="language-css second-row">
+                                      <span class="token property">visibility</span>
+                                      <span class="token punctuation">&#58;</span>
+                                      <span class="token value">hidden</span>
+                                      <span class="token punctuation">&#59;</span>
+                                  </p>
 
-                                <p class="language-css third-row">
-                                    <span class="token punctuation">&#125;</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="article-content">
-                    <h2>Floating</h2>
-                    <p>
-                        The float property specifies whether or not a box (an element) should float.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            </article>
+                                  <p class="language-css third-row">
+                                      <span class="token punctuation">&#125;</span>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="article-content">
+                      <h2>visibility</h2>
+                      <p>
+                          The visibility property specifies whether or not an element is visible.
+                      </p>
+                      <a href="#">Learn more</a>
+                  </div>
+              </article>
 
-            <article class="css-property">
-                <div class="article-img">
-                    <div class="transition-view">
-                        <div class="transition-front">
-                            <img src="images/big-bang.png" />
-                        </div>
-                        <div class="transition-back">
-                            <div class="css-code">
-                                <p class="language-css first-row">
-                                    <span class="token selector">&#35;titanic&ensp;</span>
-                                    <span class="token punctuation">&#123;</span>
-                                </p>
+              <article class="css-property">
+                  <div class="article-img">
+                      <div class="transition-view">
+                          <div class="transition-front">
+                              <img src="images/property-position.png" />
+                          </div>
+                          <div class="transition-back">
+                              <div class="css-code">
+                                  <p class="language-css first-row">
+                                      <span class="token selector">.wife&ensp;</span>
+                                      <span class="token punctuation">&#123;</span>
+                                  </p>
 
-                                <p class="language-css second-row">
-                                    <span class="token property">float</span>
-                                    <span class="token punctuation">&#58;</span>
-                                    <span class="token value"> none</span>
-                                    <span class="token punctuation">&#59;</span>
-                                </p>
+                                  <p class="language-css second-row">
+                                      <span class="token property">right</span>
+                                      <span class="token punctuation">&#58;</span>
+                                      <span class="token value"> 100&#37;</span>
+                                      <span class="token punctuation">&#59;</span>
+                                  </p>
 
-                                <p class="language-css third-row">
-                                    <span class="token punctuation">&#125;</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="article-content">
-                    <h2>Floating</h2>
-                    <p>
-                        The float property specifies whether or not a box (an element) should float.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            </article>
+                                  <p class="language-css third-row">
+                                      <span class="token punctuation">&#125;</span>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="article-content">
+                      <h2>position</h2>
+                      <p>
+                          The position property specifies the type of positioning method used for an element.
+                      </p>
+                      <a href="#">Learn more</a>
+                  </div>
+              </article>
+            </div>
         </section>
 
         <!--back to top button-->
@@ -468,20 +448,16 @@
             </ul>
             <form class="subscribe-form">
                 <input type="email" placeholder="Enter your email">
-                <button class="primary-cta">subscribe</button>
+                <button class="subscribe-button">subscribe</button>
             </form>
         </div>
 
         <div class="copyright">
             <p>
-                &#64; 2017 LifeUni.  All Rights Reserved.
+                &#64; 2017 thinkUni.  all rights reserved.
             </p>
         </div>
     </footer>
-
-</div>
-
 </body>
 
 </html>
-
