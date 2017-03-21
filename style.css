@@ -306,7 +306,7 @@ fixed background starts here
 
 .fixed-bg {
   background-image: url("images/fixed-bg.png");
-  min-height: 500px;
+  min-height: 250px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
