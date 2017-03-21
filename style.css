@@ -652,7 +652,7 @@ classes start
 ***********************/
 .classes {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #d1e1ff;
 }
 
 .classes #classes-title {
@@ -712,11 +712,12 @@ classes start
     text-transform: capitalize;
 }
 
-.single-class-container .side a {
+.single-class-container .side span {
     font-size: 30px;
     font-weight: 700;
     display: block;
     width: 100%;
+    color: #ffffff;
 }
 
 .single-class-container .back {
