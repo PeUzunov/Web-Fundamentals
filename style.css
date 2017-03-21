@@ -29,8 +29,8 @@ header section starts here
     display: none;
     position: relative;
     z-index: 3;
-    width: 53px;
-    height: 50px;
+    width: 50px;
+    height: 45px;
     padding: 10px 15px;
     cursor: pointer;
 }
@@ -39,6 +39,7 @@ header section starts here
 .navicon:after {
     transition: 0.1s;
 }
+
 .navicon {
     position: relative;
     width: 100%;
@@ -178,16 +179,22 @@ banner section starts here
     padding: 50px;
 }
 
-.banner-text-title span {
-  color: #696969;
-}
-
 .banner-text-holder .banner-text-subtitle {
   margin-top: 10px;
   margin-right: 30px;
   font-size: 22px;
   float: right;
   font-style: italic;
+  color: #d1e1ff;
+}
+
+.banner-text-title span {
+    color: #96aeda;
+}
+
+blockquote h3 {
+    font-size: 36px;
+    color: #333333;
 }
 
 blockquote {
@@ -200,15 +207,11 @@ blockquote {
     padding-left: 0.4em;
 }
 
-blockquote h3 {
-    font-size: 36px;
-}
-
 blockquote h3:before {
     content: "\201C";
     font-weight: bold;
     font-size:50px;
-    color:#889c0b;
+    color: #dbd1d8;
     position: absolute;
     top: -10px;
     left: -20px;
@@ -217,7 +220,7 @@ blockquote h3:after {
     content: "\201D";
     font-weight: bold;
     font-size:50px;
-    color:#889c0b;
+    color: #dbd1d8;
     position: absolute;
     bottom: -12px;
     right: 125px;
@@ -239,11 +242,11 @@ table section starts here
     background-color: #f7f7f7;
 }
 
-.table-expences-title {
+.table-expenses-title {
   padding-top: 30px;
 }
 
-.table-expences-title h1 {
+.table-expenses-title h1 {
   text-align: center;
   font-size: 32px;
   color: #7d7d7d;
@@ -302,7 +305,7 @@ fixed background starts here
 ***********************/
 
 .fixed-bg {
-  background-image: url("images/fixed-bg.jpg");
+  background-image: url("images/fixed-bg.png");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -847,11 +850,12 @@ back to top button start
   display: none;
   width: 54px;
   height: 54px;
+  background-color: #656c71;
+  border-radius: 50%;
 }
 
 #back-to-top {
   font-size: 24px;
-  border-radius: 50%;
   padding: 15px;
   border: none;
   display: flex;
@@ -1118,15 +1122,6 @@ footer section end
     right: 250px;
   }
 
-  .fixed-bg {
-    background: url(images/fixed-bg.jpg), linear-gradient(#497a65, #447560);
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center center;;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   .social-icons {
     flex: 2;
   }
@@ -1197,9 +1192,9 @@ footer section end
 
 }
 
-/*!* Responsive styles *!*/
-
 @media (max-width: 768px) {
+
+  /*mobile menu start*/
 
   .main-nav-trigger {
     display: block;
@@ -1231,6 +1226,18 @@ footer section end
     display: block;
   }
 
+  .header-menu .navigation-menu span {
+        margin: 5px;
+  }
+
+  .header-menu .navigation-menu span a {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px;
+  }
+
+    /*mobile menu start*/
+
   .single-class {
       flex-basis: 41%;
   }
@@ -1238,14 +1245,10 @@ footer section end
   chat section start
   ***********************/
 
-    /*!* Make the paragraph in the comments take up the whole width,*/
-    /*forcing the avatar and user info to wrap to the next line*!*/
     .comment p {
         width: 100%;
     }
 
-    /*!* Reverse the order of elements in the user comments,*/
-    /*so that the avatar and info appear after the text. *!*/
     .comment.user-comment .info {
         order: 3;
         text-align: left;
@@ -1259,9 +1262,6 @@ footer section end
         order: 1;
     }
 
-
-    /*!* Align toward the beginning of the container (to the left)*/
-    /*all the elements inside the author comments. *!*/
     .comment.author-comment {
         justify-content: flex-start;
     }
@@ -1401,10 +1401,6 @@ footer section end
     font-size: 16px;
   }
 
-  .single-class {
-      flex-basis: 1;
-  }
-
     /***********************
     git-hub start
     ***********************/
@@ -1421,7 +1417,7 @@ footer section end
     git-hub end
     ***********************/
 
-    .table-expences-title h1 {
+    .table-expenses-title h1 {
       font-size: 20px;
       padding: 0 20px;
     }
