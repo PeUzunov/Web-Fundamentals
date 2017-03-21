@@ -23,12 +23,83 @@ body {
 header section starts here
 ***********************/
 
+/*mobile menu start*/
+
+.main-nav-trigger {
+    display: none;
+    position: relative;
+    z-index: 3;
+    width: 53px;
+    height: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.navicon:before,
+.navicon:after {
+    transition: 0.1s;
+}
+.navicon {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+    background-color: #fff;
+    display: inline-block;
+}
+.navicon:before,
+.navicon:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s 0.1s;
+}
+.navicon:before {
+    top: 7px;
+}
+
+.navicon:after {
+    top: -7px;
+}
+.nav-shown .navicon:before,
+.nav-shown .navicon:after {
+    top: 0 !important;
+}
+
+.nav-shown .navicon:before,
+.nav-shown .navicon:after {
+    transition: 0.2s;
+}
+
+.nav-shown .navicon {
+    background: transparent;
+}
+
+.nav-shown .navicon:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+
+.nav-shown .navicon:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+/*mobile menu end*/
+
 .header-menu {
     display: flex;
     width: 100%;
     max-width: 1600px;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     position: fixed;
     z-index: 10000;
 }
@@ -45,7 +116,7 @@ header section starts here
   width: 100%;
 }
 
-.header-menu .navigation-menu{
+.header-menu .main-nav-menu{
     width: 100%;
     text-align: right;
     margin-right: 20px;
@@ -92,7 +163,7 @@ banner section starts here
 .mainContainer .banner {
     width: 100%;
     min-height: 500px;
-    background: url('plane.jpg');
+    background: url('images/plane.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -165,7 +236,7 @@ table section starts here
 ***********************/
 
 .table-expenses {
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
 }
 
 .table-expences-title {
@@ -231,7 +302,7 @@ fixed background starts here
 ***********************/
 
 .fixed-bg {
-  background-image: url("maxres.jpg");
+  background-image: url("images/fixed-bg.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -248,7 +319,8 @@ chat section starts here
 ***********************/
 
 .chat {
-    background-color: #a48271;
+  padding-top: 30px;
+    background-color: rgb(212, 191, 181);
 }
 
 .comment-section {
@@ -388,7 +460,7 @@ css properties section start
     padding-bottom: 40px;
 }
 
-.css-properties .css-properties-title {
+.css-properties #css-properties-title {
   margin-bottom: 30px;
 }
 
@@ -409,13 +481,14 @@ css properties section start
   justify-content: center;
 }
 
-.css-property {
+.css-article-attributes {
     background-color: #51abec;
     display: block;
     -webkit-box-shadow: 0px 0px 5px #e6e6e6;
     -moz-box-shadow: 0px 0px 5px #e6e6e6;
     box-shadow: 0px 0px 5px #e6e6e6;
     margin: 10px 20px;
+    width: 250px;
 }
 
 .article-content {
@@ -579,7 +652,7 @@ classes start
     background-color: #f9f9f9;
 }
 
-.classes .classes-title {
+.classes #classes-title {
   margin: 10px;
   text-align: center;
   font-size: 32px;
@@ -593,18 +666,20 @@ classes start
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
     justify-content: center;
 }
 
 .single-class {
-    cursor: pointer;
     height: 150px;
     -webkit-perspective: 600px; /* Chrome, Safari, Opera  */
     perspective: 600px;
     position: relative;
-    width: 200px;
+    flex-basis: 20%;
     margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .single-class-container {
@@ -612,7 +687,7 @@ classes start
     position: absolute;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-    width: 100%;
+    width: 200px;
 }
 
 .single-class-container:hover {
@@ -666,7 +741,7 @@ github fork start
     background-color: #51abec;
 }
 
-.git-hub .row {
+.git-hub #octo-cat-container {
     height: 130px;
     overflow: hidden;
     display: flex;
@@ -727,6 +802,8 @@ github fork start
 }
 
 .fork-button-container {
+    display: flex;
+    align-items: center;
     height: 130px;
     flex-basis: 25%;
 }
@@ -737,7 +814,6 @@ github fork start
     background-color: #322f30;
     font-size: 22px;
     text-align: center;
-    margin-top: 34px;
     box-shadow: 2px 2px 6px -3px #000;
     border-radius: 5px;
     padding: 10px;
@@ -1027,6 +1103,7 @@ footer section end
 
 
 @media all and (max-width: 1200px)   {
+
   blockquote h3 {
     font-size: 31px;
   }
@@ -1042,7 +1119,7 @@ footer section end
   }
 
   .fixed-bg {
-    background-image: url("maxres.jpg");
+    background: url(images/fixed-bg.jpg), linear-gradient(#497a65, #447560);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center center;;
@@ -1054,22 +1131,15 @@ footer section end
     flex: 2;
   }
 
-  .css-property {
-    margin: 0px 20px;
+  .single-class {
+      flex-basis: 20%;
   }
 
-  .article-content {
-      width: 200px;
-  }
-
-  .transition-view .transition-back {
-    width: 200px;
-    background-color: green;
-  }
-
-  .classes .single-class {
-    margin: 10px;
-  }
+  .css-single-article {
+    display: flex;
+    flex-basis: 24%;
+    justify-content: center;
+   }
 
   .octo-cat-text {
     padding-left: 20px;
@@ -1104,7 +1174,26 @@ footer section end
 
 }
 
+@media all and (max-width: 1024px)   {
+
+  .css-single-article {
+    flex-basis: 40%;
+   }
+
+}
+
+
 @media all and (max-width: 992px) {
+
+  .single-class {
+      flex-basis: 32%;
+  }
+
+  .mainContainer .banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
 
 }
 
@@ -1112,6 +1201,39 @@ footer section end
 
 @media (max-width: 768px) {
 
+  .main-nav-trigger {
+    display: block;
+    background-color: #A9A9A9;
+  }
+
+  .header-menu {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .main-nav-menu:hover .navigation-menu {
+    display: block;
+  }
+
+  .main-nav-menu {
+    flex-direction: column;
+  }
+
+  .main-nav-menu .navigation-menu {
+    text-align: center;
+  }
+
+  .main-nav-menu .navigation-menu span {
+    display: block;
+  }
+
+  .single-class {
+      flex-basis: 41%;
+  }
   /***********************
   chat section start
   ***********************/
@@ -1179,51 +1301,138 @@ footer section end
     /***********************
     chat section end
     ***********************/
+
+    /***********************
+    git-hub start
+    ***********************/
+    .fork-graphic {
+      display: none;
+    }
+
+    .octo-cat-text {
+      flex-basis: 50%;
+    }
+    /***********************
+    git-hub end
+    ***********************/
+
+    .social-icons {
+      flex: 1;
+    }
 }
 
+@media screen and (max-width:640px) {
+  .css-single-article {
+      flex-basis: 51%;
+     }
 
+  .footer-social-subscribe {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .subscribe-form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  /***********************
+  table starts here
+  ***********************/
+      table {
+        border: 0;
+      }
+
+      thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+
+      table tr {
+          margin-bottom: 10px;
+          display: block;
+          border-bottom: 2px solid #ddd;
+          background: #3CB371;
+        }
+
+      table td::before {
+          content: attr(data-label);
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+
+      table td {
+          display: block;
+          text-align: right;
+          font-size: 13px;
+          border-bottom: 2px  solid #ccc;
+        }
+
+      table td:last-child {
+          border-bottom: 0;
+      }
+
+  /***********************
+  table ends here
+  ***********************/
+
+}
 
 @media screen and (max-width:576px) {
 
-    /***********************
-    table starts here
-    ***********************/
-        table {
-          border: 0;
-        }
+  blockquote h3 {
+    font-size: 24px;
+        line-height: 1.3;
+  }
 
-        thead tr {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-          }
+  blockquote h3:before {
+    font-size: 41px;
+  }
 
-        table tr {
-            margin-bottom: 10px;
-            display: block;
-            border-bottom: 2px solid #ddd;
-            background: #fff5e7;
-          }
+  blockquote h3:after {
+    font-size: 41px;
+    bottom: -14px;
+    right: 85px;
+  }
 
-        table td::before {
-            content: attr(data-label);
-            float: left;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
+  .banner-text-holder .banner-text-subtitle {
+    font-size: 16px;
+  }
 
-        table td {
-            display: block;
-            text-align: right;
-            font-size: 13px;
-            border-bottom: 2px  solid #ccc;
-          }
-
-        table td:last-child {
-            border-bottom: 0;
-        }
+  .single-class {
+      flex-basis: 1;
+  }
 
     /***********************
-    table ends here
+    git-hub start
     ***********************/
+    .git-hub #octo-cat-container {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+
+    .octo-cat-text {
+      text-align: center;
+    }
+    /***********************
+    git-hub end
+    ***********************/
+
+    .table-expences-title h1 {
+      font-size: 20px;
+      padding: 0 20px;
+    }
+
+    .classes #classes-title {
+      font-size: 20px;
+      padding: 0 20px;
+    }
+
+    .css-properties h1 {
+      font-size: 20px;
+      padding: 0 20px;
+    }
 }

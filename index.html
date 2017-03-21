@@ -9,8 +9,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <script src="scripts/jquery-3.0.0.js"></script>
     <script src="scripts/main.js"></script>
@@ -20,14 +20,19 @@
 <body>
     <header class="header-menu">
         <div class="logoHolder">
-          <img src="images/logo.png" class="logo" alt="">
+          <img src="images/logo.png" class="logo" alt="logo" />
         </div>
-        <nav class="navigation-menu">
-            <span><a href="#photos">Photos</a></span>
-            <span><a href="#photos">Photos</a></span>
-            <span><a href="#photos">Photos</a></span>
-            <span><a href="#photos">Photos</a></span>
-        </nav>
+        <div class="main-nav-menu">
+          <span class="main-nav-trigger">
+             <a href="#" class="navicon"></a>
+          </span>
+           <nav class="navigation-menu">
+               <span><a href="#chat-info">The Dram Girl</a></span>
+               <span><a href="#classes-title">Trainings</a></span>
+               <span><a href="#octo-cat-container">Fork on GitHub</a></span>
+               <span><a href="#css-properties-title">Learn CSS</a></span>
+           </nav>
+        </div>       
     </header>
 
     <main class="mainContainer">
@@ -59,36 +64,36 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Payment</th>
-                            <th>Issue Date</th>
+                            <th>Expense</th>
+                            <th>Type</th>
                             <th>Amount</th>
                             <th>Period</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Payment">Payment #1</td>
-                            <td data-label="Issue Date">02/01/2015</td>
-                            <td data-label="Amount">$2,311</td>
-                            <td data-label="Period">01/01/2015 - 01/31/2015</td>
+                            <td data-label="Expense">Bars</td>
+                            <td data-label="Type">Social Life</td>
+                            <td data-label="Amount">$5.00</td>
+                            <td data-label="Period">01/01/2017 - 21/03/2017</td>
                         </tr>
                         <tr>
-                            <td data-label="Payment">Payment #1</td>
-                            <td data-label="Issue Date">02/01/2015</td>
-                            <td data-label="Amount">$2,311</td>
-                            <td data-label="Period">01/01/2015 - 01/31/2015</td>
+                            <td data-label="Expense">Girlfriend</td>
+                            <td data-label="Type">Relationships</td>
+                            <td data-label="Amount">$0.00</td>
+                            <td data-label="Period">01/01/2017 - 21/03/2017</td>
                         </tr>
                         <tr>
-                            <td data-label="Payment">Payment #1</td>
-                            <td data-label="Issue Date">02/01/2015</td>
-                            <td data-label="Amount">$2,311</td>
-                            <td data-label="Period">01/01/2015 - 01/31/2015</td>
+                            <td data-label="Expense">Food</td>
+                            <td data-label="Type">Source of code energy</td>
+                            <td data-label="Amount">$500.00</td>
+                            <td data-label="Period">01/01/2017 - 21/03/2017</td>
                         </tr>
                         <tr>
-                            <td data-label="Payment">Payment #1</td>
-                            <td data-label="Issue Date">02/01/2015</td>
-                            <td data-label="Amount">$2,311</td>
-                            <td data-label="Period">01/01/2015 - 01/31/2015</td>
+                            <td data-label="Expense">New Monitors</td>
+                            <td data-label="Type">Investment</td>
+                            <td data-label="Amount">$500.00</td>
+                            <td data-label="Period">01/01/2017 - 21/03/2017</td>
                         </tr>
                     </tbody>
                 </table>
@@ -102,7 +107,7 @@
         </section>
 
         <section class="chat container">
-            <div class="chat-info">
+            <div id="chat-info">
                 <ul class="comment-section">
                     <li class="comment user-comment">
                         <div class="info">
@@ -114,8 +119,8 @@
                         </a>
                         <p>How do you tell HTML or HTML5?</p>
                     </li>
-                    <li class="comment author-comment">
 
+                    <li class="comment author-comment">
                         <div class="info">
                             <a target="_blank" href="http://merriechristopher.com/">The Dream Girl</a>
                             <span>1 hour ago</span>
@@ -125,8 +130,8 @@
                         </a>
                         <p>Try it out in Internet Explorer. Did it work?</p>
                     </li>
-					
-					<li class="comment user-comment">
+
+				            <li class="comment user-comment">
                         <div class="info">
                             <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
                             <span>1 minute ago</span>
@@ -136,6 +141,7 @@
                         </a>
                         <p>No?</p>
                     </li>
+
                     <li class="comment author-comment">
 
                         <div class="info">
@@ -147,13 +153,11 @@
                         </a>
                         <p>It's HTML5</p>
                     </li>
-					
-                   
                 </ul>
             </div>
         </section>
-		
-		 <section class="chat container">
+
+		 <!-- <section class="chat container">
             <div class="chat-info">
                 <ul class="comment-section">
                     <li class="comment user-comment">
@@ -166,7 +170,7 @@
                         </a>
                         <p>You are the &#123;CSS&#125; to my &#60;HTML&#62; &#9829;</p>
                     </li>
-					
+
                     <li class="comment author-comment">
 
                         <div class="info">
@@ -178,7 +182,7 @@
                         </a>
                         <p>?</p>
                     </li>
-					
+
                     <li class="comment user-comment">
                         <div class="info">
                             <a target="_blank" href="https://softuni.bg/">Newbie Programmer</a>
@@ -188,14 +192,14 @@
                             <img  src="images/programmer-chat-pic.png" width="35" alt="Profile Avatar" title="The Programmer" />
                         </a>
                         <p>Sorry, I'm a programmer and I have no life</p>
-                    </li>					
-					              
+                    </li>
+
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <section class="classes container">
-            <h1 class="classes-title">
+            <h1 id="classes-title">
                 What you will learn in ThinkUni?
             </h1>
             <div class="all-classes">
@@ -205,7 +209,7 @@
                             <a href="#">HTML</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-html.jpg" alt="img">
+                            <img src="images/class-html.jpg" alt="Class Image">
                         </div>
                     </div>
                 </div>
@@ -215,7 +219,7 @@
                             <a href="#">css</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-css.png" alt="img">
+                            <img src="images/class-css.png" alt="Class Image">
                         </div>
                     </div>
                 </div>
@@ -225,7 +229,7 @@
                             <a href="#">how to debug</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-debugging.jpg" alt="img">
+                            <img src="images/class-debugging.jpg" alt="Class Image">
                         </div>
                     </div>
                 </div>
@@ -235,18 +239,17 @@
                             <a href="#">algorithms</a>
                         </div>
                         <div class="side back">
-                            <img src="images/class-algorithms.jpg" alt="img">
+                            <img src="images/class-algorithms.jpg" alt="Class Image">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-		
-		        <section class="git-hub container">
 
-            <div class="git-hub row">
+		    <section class="git-hub container">
+            <div class="git-hub" id="octo-cat-container">
                 <div class="octo-cat">
-                    <img src="images/Octocat.png" alt="">
+                    <img src="images/Octocat.png" alt="OctoCat Imgage">
                 </div>
 
                 <div class="octo-cat-text">
@@ -257,13 +260,13 @@
                 </div>
 
                 <div class="fork-graphic">
-                    <img src="images/Forking.svg" alt="">
+                    <img src="images/Forking.svg" alt="Fork Image">
                 </div>
 
                 <div class="fork-button-container">
                     <div class="fork-button">
                         <a target="_blank" href="https://github.com/PeUzunov/Web-Fundamentals">
-                            <span class="line-one">fork lifeuni</span>
+                            <span class="line-one">fork thinkuni</span>
                             <span class="line-two">on github</span>
                         </a>
                     </div>
@@ -272,17 +275,18 @@
         </section>
 
         <section class="css-properties container">
-            <div class="css-properties-title">
+            <div id="css-properties-title">
                 <h1>
-                  Here are some CSS properties you might want to know about
+                  Here are some CSS properties you might want to know about.
                 </h1>
             </div>
             <div class="css-properties-articles">
-              <article class="css-property">
+              <article class="css-single-article">
+                <div class="css-article-attributes">
                   <div class="article-img">
                       <div class="transition-view">
                           <div class="transition-front">
-                              <img src="images/property-floating.png" />
+                              <img src="images/property-floating.png" alt="Article Image"/>
                           </div>
                           <div class="transition-back">
                               <div class="css-code">
@@ -312,13 +316,15 @@
                       </p>
                       <a href="#">Learn more</a>
                   </div>
+                </div>
               </article>
 
-              <article class="css-property">
+              <article class="css-single-article">
+                <div class="css-article-attributes">
                   <div class="article-img">
                       <div class="transition-view">
                           <div class="transition-front">
-                              <img src="images/property-display.png" />
+                              <img src="images/property-display.png" alt="Article Image" />
                           </div>
                           <div class="transition-back">
                               <div class="css-code">
@@ -348,13 +354,15 @@
                       </p>
                       <a href="#">Learn more</a>
                   </div>
+                </div>
               </article>
 
-              <article class="css-property">
+              <article class="css-single-article">
+                <div class="css-article-attributes">
                   <div class="article-img">
                       <div class="transition-view">
                           <div class="transition-front">
-                              <img src="images/property-visibility.png" />
+                              <img src="images/property-visibility.png" alt="Article Image" />
                           </div>
                           <div class="transition-back">
                               <div class="css-code">
@@ -384,13 +392,15 @@
                       </p>
                       <a href="#">Learn more</a>
                   </div>
+                </div>
               </article>
 
-              <article class="css-property">
+              <article class="css-single-article">
+                <div class="css-article-attributes">
                   <div class="article-img">
                       <div class="transition-view">
                           <div class="transition-front">
-                              <img src="images/property-position.png" />
+                              <img src="images/property-position.png" alt="Article Image" />
                           </div>
                           <div class="transition-back">
                               <div class="css-code">
@@ -420,6 +430,7 @@
                       </p>
                       <a href="#">Learn more</a>
                   </div>
+                </div>
               </article>
             </div>
         </section>
@@ -437,7 +448,7 @@
 
     <footer>
         <div class="footer-social-subscribe">
-            <h4 class="_14">Follow us on</h4>
+            <h4 class="_14">Follow us on:</h4>
             <ul class="social-icons">
                 <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
                 <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
